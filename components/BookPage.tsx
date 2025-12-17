@@ -10,6 +10,11 @@ interface BookPageProps {
 }
 
 export const BookPage: React.FC<BookPageProps> = ({ page, pageNumber, totalPages, isCover }) => {
+  console.log('📄 [BookPage.tsx] BookPage 組件渲染 - pageNumber:', pageNumber);
+  console.log('📄 [BookPage.tsx] page 資料:', page);
+  console.log('📄 [BookPage.tsx] page.type:', page?.type);
+  console.log('📄 [BookPage.tsx] isCover:', isCover);
+  
   const getIcon = () => {
     switch(page.id) {
       case 1: return <AlertCircle className="w-8 h-8 text-amber-600" />;

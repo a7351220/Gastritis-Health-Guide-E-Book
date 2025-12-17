@@ -8,8 +8,15 @@ interface BookProps {
 }
 
 export const Book: React.FC<BookProps> = ({ pages }) => {
+  console.log('📖 [Book.tsx] Book 組件開始渲染');
+  console.log('📖 [Book.tsx] pages:', pages);
+  console.log('📖 [Book.tsx] pages 長度:', pages?.length);
+  
   const [currentPage, setCurrentPage] = useState(0);
   const totalPages = pages.length;
+  
+  console.log('📖 [Book.tsx] currentPage:', currentPage);
+  console.log('📖 [Book.tsx] totalPages:', totalPages);
 
   // Ensure even number of pages for the 3D book feel if using spread, 
   // but for this single-sheet turning effect, odd is fine.
