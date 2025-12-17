@@ -12,10 +12,10 @@ function App() {
       <header className="relative z-10 mb-2 md:mb-4 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 bg-white/80 backdrop-blur-sm px-4 md:px-6 py-3 md:py-4 rounded-lg shadow-lg">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-amber-600 rounded-md flex items-center justify-center text-white font-serif font-bold">胃</div>
-          <h1 className="text-base md:text-xl font-bold text-stone-800 tracking-wide">腸胃英雄的健康之旅</h1>
+          <h1 className="text-base md:text-xl font-bold text-stone-800 tracking-wide">成為腸胃健康英雄</h1>
         </div>
         <a 
-          href="/腸胃英雄的健康之旅.pdf" 
+          href="/成為腸胃健康英雄.pdf" 
           download 
           className="text-xs md:text-sm text-stone-500 hover:text-stone-800 transition-colors px-3 md:px-4 py-1.5 md:py-2 bg-amber-100 hover:bg-amber-200 rounded-lg whitespace-nowrap"
         >
@@ -25,7 +25,7 @@ function App() {
 
       {/* Main PDF Area */}
       <main className="flex-1 relative z-10 flex items-center justify-center">
-        <PDFBook pdfUrl="/腸胃英雄的健康之旅.pdf" />
+        <PDFBook pdfUrl="/成為腸胃健康英雄.pdf" />
       </main>
 
       {/* Footer */}
