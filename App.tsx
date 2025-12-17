@@ -15,7 +15,7 @@ function App() {
           <h1 className="text-base md:text-xl font-bold text-stone-800 tracking-wide">成為腸胃健康英雄</h1>
         </div>
         <a 
-          href="/成為腸胃健康英雄.pdf" 
+          href="/Gut_Health_Heroes.pdf" 
           download 
           className="text-xs md:text-sm text-stone-500 hover:text-stone-800 transition-colors px-3 md:px-4 py-1.5 md:py-2 bg-amber-100 hover:bg-amber-200 rounded-lg whitespace-nowrap"
         >
@@ -25,7 +25,7 @@ function App() {
 
       {/* Main PDF Area */}
       <main className="flex-1 relative z-10 flex items-center justify-center">
-        <PDFBook pdfUrl="/成為腸胃健康英雄.pdf" />
+        <PDFBook pdfUrl="/Gut_Health_Heroes.pdf" />
       </main>
 
       {/* Footer */}
