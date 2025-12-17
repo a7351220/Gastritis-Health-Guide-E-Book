@@ -10,11 +10,6 @@ interface BookPageProps {
 }
 
 export const BookPage: React.FC<BookPageProps> = ({ page, pageNumber, totalPages, isCover }) => {
-  console.log('📄 [BookPage.tsx] BookPage 組件渲染 - pageNumber:', pageNumber);
-  console.log('📄 [BookPage.tsx] page 資料:', page);
-  console.log('📄 [BookPage.tsx] page.type:', page?.type);
-  console.log('📄 [BookPage.tsx] isCover:', isCover);
-  
   const getIcon = () => {
     switch(page.id) {
       case 1: return <AlertCircle className="w-8 h-8 text-amber-600" />;
@@ -74,7 +69,7 @@ export const BookPage: React.FC<BookPageProps> = ({ page, pageNumber, totalPages
 
   // Content Pages (Text or Image)
   return (
-    <div className="w-full h-full bg-[#fdfbf7] relative shadow-inner flex flex-col overflow-hidden">
+    <div className="w-full h-full bg-[#fdfbf7] relative shadow-inner flex flex-col">
        {/* Paper Texture Effect */}
       <div className="absolute inset-0 pointer-events-none opacity-50 z-0" style={{ backgroundImage: 'radial-gradient(#e5e7eb 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
       

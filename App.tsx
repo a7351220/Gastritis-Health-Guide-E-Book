@@ -3,12 +3,7 @@ import { Book } from './components/Book';
 import { BOOK_CONTENT } from './constants';
 
 function App() {
-  console.log('📱 [App.tsx] App 組件開始渲染');
-  console.log('📚 [App.tsx] BOOK_CONTENT:', BOOK_CONTENT);
-  console.log('📚 [App.tsx] BOOK_CONTENT 長度:', BOOK_CONTENT?.length);
-  
-  try {
-    return (
+  return (
     <div className="min-h-screen bg-stone-200 flex flex-col items-center justify-center p-4 md:p-8 relative overflow-hidden">
       
       {/* Background Ambience */}
@@ -25,13 +20,7 @@ function App() {
 
       {/* Main Book Area */}
       <main className="w-full h-full flex items-center justify-center z-10 py-10">
-        {BOOK_CONTENT && BOOK_CONTENT.length > 0 ? (
-          <Book pages={BOOK_CONTENT} />
-        ) : (
-          <div className="text-red-600 p-4 bg-white rounded">
-            錯誤：找不到書籍內容資料
-          </div>
-        )}
+        <Book pages={BOOK_CONTENT} />
       </main>
 
       {/* Footer */}
@@ -40,17 +29,6 @@ function App() {
       </footer>
     </div>
   );
-  } catch (error) {
-    console.error('❌ [App.tsx] 渲染錯誤:', error);
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-red-600 p-8 bg-white rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">渲染錯誤</h2>
-          <p>{String(error)}</p>
-        </div>
-      </div>
-    );
-  }
 }
 
 export default App;
