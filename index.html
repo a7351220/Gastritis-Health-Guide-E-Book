@@ -28,6 +28,20 @@
       .rotate-y-180 {
         transform: rotateY(-180deg);
       }
+      /* PDF Viewer Styles */
+      .react-pdf__Page {
+        position: relative;
+      }
+      .react-pdf__Page__canvas {
+        max-width: 100%;
+        height: auto !important;
+      }
+      .react-pdf__Page__textContent {
+        display: none;
+      }
+      .react-pdf__Page__annotations {
+        display: none;
+      }
     </style>
 </head>
   <body class="bg-stone-100 text-stone-800 antialiased">
